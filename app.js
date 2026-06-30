@@ -75,9 +75,25 @@
     const section = data.highlights;
     const video = section.featuredVideo;
 
-    const videoContent = video.url
-      ? `<a class="play-button" href="${escapeHtml(video.url)}" target="_blank" rel="noopener noreferrer">▶ <span>${escapeHtml(video.buttonLabel)}</span></a>`
-      : '<div class="play-placeholder"><i>▶</i><em>Video coming soon</em></div>';
+    const youtubeMatch = (video.url || "").match(
+      /(?:youtu\.be\/|youtube(?:-nocookie)?\.com\/(?:watch\?v=|embed\/|shorts\/))([A-Za-z0-9_-]{11})/
+    );
+    const youtubeId = youtubeMatch ? youtubeMatch[1] : "";
+
+    const videoContent = youtubeId
+      ? `<div class="youtube-frame">
+          <iframe
+            src="https://www.youtube-nocookie.com/embed/${escapeHtml(youtubeId)}"
+            title="${escapeHtml(video.title)}"
+            loading="lazy"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen>
+          </iframe>
+        </div>`
+      : video.url
+        ? `<a class="play-button" href="${escapeHtml(video.url)}" target="_blank" rel="noopener noreferrer">▶ <span>${escapeHtml(video.buttonLabel)}</span></a>`
+        : `<div class="play-placeholder"><i>▶</i><em>Video coming soon</em></div>`;
 
     document.querySelector("#highlights .content-list").innerHTML = `
       ${sectionHeading(section)}

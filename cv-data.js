@@ -28,7 +28,7 @@ window.cvData = {
       label: "FEATURED RESEARCH VIDEO",
       title: "Adaptive Robot Force Control",
       description: "RL-based adaptation for physical interaction",
-      url: "",
+      url: "https://www.youtube.com/watch?v=AzlCFdNGAcQ",
       buttonLabel: "Watch video"
     },
 
@@ -212,7 +212,7 @@ window.cvData = {
         title: "Gantry Type Lapping Manipulator Toward Unmanned Lapping Process for a Large Work Surface",
         authors: "Park, S., Koh, D., **Shim, J.**, Kim, J. J., & Lee, S. K.",
         image: "assets/publications/ijpem-gt_2021_park/images/paper-preview.png",
-        links: [{ label: "Paper", url: "https://link.springer.com/article/10.1007/s40684-020-00274-8" }]
+        links: [{ label: "Paper", url: "https://link.springer.com/article/10.1007/s40684-020-00274-8" },{ label: "Video", url: "https://www.youtube.com/watch?v=Wt-D9-4ZkpU" }]
       },
       {
         period: "JMST · 2019",

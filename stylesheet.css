@@ -238,3 +238,19 @@ footer {
   letter-spacing: 0.08em;
   text-transform: uppercase;
 }
+
+
+/* Responsive embedded YouTube player for the featured video. */
+.youtube-frame {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border-radius: 10px;
+  background: #0b171b;
+}
+.youtube-frame iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
