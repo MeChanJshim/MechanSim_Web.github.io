@@ -171,6 +171,7 @@ window.cvData = {
         authors: "**Sim, J.**, Kim, Y., Kim, E. C., Song, E., Lee, S., Sim, J., & Choi, H. R.",
         image: "assets/publications/electronics_2026_sim/images/paper-preview.png",
         links: [{ label: "Paper", url: "https://www.mdpi.com/2079-9292/15/10/2045" },
+                { label: "Video", url: "https://youtu.be/mubC1dIKdCs" },
                 { label: "PDF", url: "assets/publications/electronics_2026_sim/paper/paper.pdf", download: true }
         ]
       },
