@@ -176,14 +176,14 @@ window.cvData = {
         period: "IEEE RA-L · 2026",
         title: "Hand-Gesture Based Robot Tracking and Teaching Framework: Demonstration in Surface Polishing Task",
         authors: "Kim, E. C., **Sim, J.**, Song, E., Lee, S. Y., Sim, J. Y., & Choi, H. R.",
-        image: "",
+        image: "assets/publications/ieee-ral_2026_kim/images/paper-preview.png",
         links: [{ label: "Paper", url: "https://doi.org/10.1109/LRA.2026.3666366" }]
       },
       {
         period: "IEEE RA-P · 2026",
         title: "Toward Reliable Bin-Picking: Collision-Aware Robotic Design and Control Strategy for Heavily Cluttered Environment",
         authors: "Um, S., Son, Y. G., **Shim, J.**, & Choi, H. R.",
-        image: "",
+        image: "assets/publications/ieee-rap_2026_um/images/paper-preview.png",
         links: [{ label: "Paper", url: "https://ieeexplore.ieee.org/document/11358698" }]
       },
       {
@@ -197,7 +197,7 @@ window.cvData = {
         period: "IEEE RA-L · 2025",
         title: "Safety-Critical Reactive Motion Using Constrained Variable Admittance Control With Dual-Type Proximity Sensors",
         authors: "Moon, S. J., Yim, H., Kang, H., **Shim, J. Y.**, Jung, D., & Choi, H. R.",
-        image: "",
+        image: "assets/publications/ieee-ral_2025_moon/images/paper-preview.png",
         links: [{ label: "Paper", url: "https://ieeexplore.ieee.org/document/11081889" }]
       },
       {
@@ -225,8 +225,8 @@ window.cvData = {
         period: "KSME-A · 2019",
         title: "Design of a Robot Machining System and Tool Path Generation for Post-Process Machining of 3D Printed Product",
         authors: "**Shim, J.**, Kim, N., Oh, D., Hong, S., & Lee, W.",
-        image: "",
-        links: [{ label: "Paper", url: "https://doi.org/10.3795/KSME-A.2019.43.5.359" }]
+        image: "assets/publications/ksme-a_2019_shim/images/paper-preview.png",
+        links: [{ label: "Paper", url: "https://doi.org/10.3795/KSME-A.2019.43.5.359" },{ label: "Video", url: "https://youtu.be/ZR9_Fk1AiQU" }]
       }
     ]
   },
