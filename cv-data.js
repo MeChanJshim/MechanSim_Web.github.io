@@ -170,7 +170,9 @@ window.cvData = {
         title: "Dynamical System-Based Fuzzy Adaptive Admittance Control for Uncertain Environments",
         authors: "**Sim, J.**, Kim, Y., Kim, E. C., Song, E., Lee, S., Sim, J., & Choi, H. R.",
         image: "assets/publications/electronics_2026_sim/images/paper-preview.png",
-        links: [{ label: "Paper", url: "https://www.mdpi.com/2079-9292/15/10/2045" }]
+        links: [{ label: "Paper", url: "https://www.mdpi.com/2079-9292/15/10/2045" },
+                { label: "PDF", url: "assets/publications/electronics_2026_sim/paper/paper.pdf", download: true }
+        ]
       },
       {
         period: "IEEE RA-L · 2026",
@@ -226,7 +228,9 @@ window.cvData = {
         title: "Design of a Robot Machining System and Tool Path Generation for Post-Process Machining of 3D Printed Product",
         authors: "**Shim, J.**, Kim, N., Oh, D., Hong, S., & Lee, W.",
         image: "assets/publications/ksme-a_2019_shim/images/paper-preview.png",
-        links: [{ label: "Paper", url: "https://doi.org/10.3795/KSME-A.2019.43.5.359" },{ label: "Video", url: "https://youtu.be/ZR9_Fk1AiQU" }]
+        links: [{ label: "Paper", url: "https://doi.org/10.3795/KSME-A.2019.43.5.359" },
+                { label: "Video", url: "https://youtu.be/ZR9_Fk1AiQU" },
+                { label: "PDF", url: "assets/publications/ksme-a_2019_shim/paper/paper.pdf", download: true }]
       }
     ]
   },
