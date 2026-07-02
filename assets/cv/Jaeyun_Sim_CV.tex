@@ -1,0 +1,161 @@
+\documentclass[10pt,letterpaper]{article}
+
+\usepackage[margin=0.68in]{geometry}
+\usepackage{fontspec}
+\usepackage[english]{babel}
+\usepackage{microtype}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{tabularx}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+
+\setmainfont{Georgia}
+\setsansfont{Arial}
+\definecolor{accent}{HTML}{17365D}
+\definecolor{muted}{HTML}{555555}
+\hypersetup{colorlinks=true,urlcolor=accent,linkcolor=accent}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\setlist[itemize]{leftmargin=1.15em,itemsep=1.5pt,topsep=2pt,parsep=0pt}
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\fancyfoot[C]{\footnotesize\color{muted} Jaeyun Sim \enspace\textbar\enspace Curriculum Vitae \enspace\textbar\enspace \thepage}
+\titleformat{\section}{\large\bfseries\sffamily\color{accent}}{}{0pt}{}[\vspace{-3pt}\color{accent}\titlerule]
+\titlespacing*{\section}{0pt}{9pt}{5pt}
+\newcommand{\datedentry}[3]{%
+  \begin{tabularx}{\textwidth}{@{}X r@{}}
+    \textbf{#1} & \textbf{#2}\\[-1pt]
+    \multicolumn{2}{@{}l@{}}{\textit{#3}}
+  \end{tabularx}\vspace{1pt}}
+\newcommand{\pub}[1]{\item #1}
+
+\begin{document}
+
+\begin{center}
+  {\fontsize{23}{26}\selectfont\bfseries\sffamily Jaeyun Sim}\\[3pt]
+  {\large Ph.D. Candidate in Mechanical Engineering --- Robotics and Force Control}\\[5pt]
+  Sungkyunkwan University, Republic of Korea\\[2pt]
+  \href{mailto:wodbs1118@g.skku.edu}{wodbs1118@g.skku.edu}
+  \enspace\textbar\enspace
+  \href{https://scholar.google.co.kr/citations?user=zD0o-50AAAAJ}{Google Scholar}
+  \enspace\textbar\enspace
+  \href{https://github.com/MeChanJshim}{GitHub}
+  \enspace\textbar\enspace
+  \href{https://mechanjshim.github.io/MechanSim_Web.github.io/}{Research Portfolio}
+\end{center}
+
+\section{Research Profile}
+Ph.D. candidate developing learning-based adaptive force-control methods for robotic contact tasks in uncertain and dynamic environments. Research spans reinforcement learning, variable admittance control, nonlinear and passivity-based control, force/torque sensing, and signal processing. Experienced in real-time implementation and experimental validation on collaborative manipulators. Seeking postdoctoral research opportunities in robot learning, interaction control, and intelligent manufacturing.
+
+\section{Research Interests}
+Robot learning for contact-rich manipulation; adaptive force and impedance/admittance control; safe physical human--robot interaction; reinforcement and imitation learning; robotic finishing and intelligent manufacturing; force/torque sensing and calibration.
+
+\section{Education}
+\datedentry{Ph.D. in Mechanical Engineering}{Expected Feb. 2027}{Sungkyunkwan University, Republic of Korea}
+\begin{itemize}
+  \item Research focus: \textit{G-Force: Generalized Force Control via Environment-Encoder-Driven Reinforcement Learning-Based Variable Admittance Control}.
+\end{itemize}
+
+\datedentry{M.S. in Mechanical Engineering}{Aug. 2020}{Gwangju Institute of Science and Technology (GIST), Republic of Korea}
+\begin{itemize}
+  \item Thesis: \textit{Tool Path Generation of a Lapping Wheel Considering Wheel Compliance}.
+\end{itemize}
+
+\datedentry{B.S. in Mechanical Engineering}{Feb. 2019}{Chungnam National University, Republic of Korea}
+
+\section{Research Experience}
+\datedentry{Visiting Researcher}{Jun.--Oct. 2025}{Manipulation and Mobility Systems Group, National Institute of Standards and Technology (NIST), USA}
+\begin{itemize}
+  \item Investigated reinforcement-learning-based force control for stable adaptation in uncertain environments.
+  \item Contributed to performance-evaluation methods for force control across environments with varying stiffness.
+\end{itemize}
+
+\datedentry{Graduate Research Assistant}{Dec. 2020--Present}{Robotics Innovatory, Sungkyunkwan University, Republic of Korea}
+\begin{itemize}
+  \item Developing generalized force control using environment-encoder-driven reinforcement learning and variable admittance control.
+  \item Developed dynamical-system-based fuzzy adaptive admittance control with passivity management using an energy tank; implemented on a UR10 manipulator using ROS, C++, Linux, and PREEMPT\_RT.
+  \item Developed multi-channel weighted band-stop filtering and energy-tank-based adaptive admittance control; validated on an Indy7 manipulator using ROS, C++, Linux, and Xenomai.
+  \item Developed a calibration control system for an ultra-thin torque sensor, combining direct force control, trajectory generation, and neural-network-based calibration.
+\end{itemize}
+
+\datedentry{Graduate Researcher}{Mar. 2019--Oct. 2020}{Ultraprecision Machine System Laboratory, GIST, Republic of Korea}
+\begin{itemize}
+  \item Generated optimal tool paths that prevent over-machining using an identified compliant lapping-wheel model.
+  \item Designed control methods for a gantry-type five-axis manipulator for automated surface lapping.
+\end{itemize}
+
+\datedentry{Undergraduate Research Assistant}{}{Manufacturing System Control Laboratory, Chungnam National University, Republic of Korea}
+\begin{itemize}
+  \item Planned tool paths and designed and controlled a five-axis manipulator for post-processing additively manufactured parts.
+\end{itemize}
+
+\datedentry{Research Intern}{Jan.--Feb. 2018}{Ultra Precision Equipment Laboratory, Korea Institute of Machinery and Materials (KIMM), Republic of Korea}
+\begin{itemize}
+  \item Designed and controlled a tilting head for a mobile machine tool.
+\end{itemize}
+
+\section{Peer-Reviewed Journal Publications}
+\begin{enumerate}[leftmargin=1.55em,itemsep=3pt,topsep=2pt]
+  \pub{\textbf{Sim, J.}, Kim, Y., Kim, E. C., Song, E., Lee, S., Sim, J., and Choi, H. R. (2026). ``Dynamical System-Based Fuzzy Adaptive Admittance Control for Uncertain Environments.'' \textit{Electronics}, 15(10), 2045.}
+  \pub{Kim, E. C., \textbf{Sim, J.}, Song, E., Lee, S. Y., Sim, J. Y., and Choi, H. R. (2026). ``Hand-Gesture Based Robot Tracking and Teaching Framework: Demonstration in Surface Polishing Task.'' \textit{IEEE Robotics and Automation Letters}.}
+  \pub{Um, S., Son, Y. G., \textbf{Shim, J.}, and Choi, H. R. (2026). ``Toward Reliable Bin-Picking: Collision-Aware Robotic Design and Control Strategy for Heavily Cluttered Environment.'' \textit{IEEE Robotics and Automation Practice}.}
+  \pub{Lee, S. Y., Sim, J. Y., Seok, D. Y., Kim, Y. B., \textbf{Shim, J.}, Kim, U., and Choi, H. R. (2026). ``A Redundant-Sensing-Based Six-Axis Force/Torque Sensor Enabling Compactness and High Sensitivity.'' \textit{Sensors}, 26(3), 871.}
+  \pub{Moon, S. J., Yim, H., Kang, H., Shim, J. Y., Jung, D., and Choi, H. R. (2025). ``Safety-Critical Reactive Motion Using Constrained Variable Admittance Control With Dual-Type Proximity Sensors.'' \textit{IEEE Robotics and Automation Letters}.}
+  \pub{Lee, S. Y., Sim, J. Y., Kim, Y. B., Seok, D., \textbf{Shim, J.}, and Choi, H. R. (2025). ``Design Analysis and Isotropic Optimization for Miniature Capacitive Force/Torque Sensor.'' \textit{Sensors}, 25(3), 940.}
+  \pub{Park, S., Koh, D., \textbf{Shim, J.}, Kim, J. J., and Lee, S. K. (2021). ``Gantry Type Lapping Manipulator Toward Unmanned Lapping Process for a Large Work Surface.'' \textit{International Journal of Precision Engineering and Manufacturing--Green Technology}, 8, 1723--1737.}
+  \pub{Song, J., \textbf{Shim, J.}, Kim, N., Chae, G. B., and Lee, W. (2019). ``Friction Compensation Control of Feed Drive System Operated in Vacuum.'' \textit{Journal of Mechanical Science and Technology}, 33(11), 5353--5360.}
+  \pub{\textbf{Shim, J.}, Kim, N., Oh, D., Hong, S., and Lee, W. (2019). ``Design of a Robot Machining System and Tool Path Generation for Post-Process Machining of 3D Printed Product.'' \textit{Transactions of the Korean Society of Mechanical Engineers A}, 43(5), 359--364.}
+\end{enumerate}
+
+\section{Conference Presentations}
+\begin{enumerate}[leftmargin=1.55em,itemsep=3pt,topsep=2pt]
+  \pub{\textbf{Shim, J.}, Park, S. K., Koh, D. G., Kim, J., and Lee, S. K. ``Design and Control of a 5-Axis Manipulator for the Automatic Lapping Process.'' ASPEN 2019, Matsue, Japan, 2019. Oral presentation.}
+  \pub{\textbf{Sim, J.}, Song, E. S., and Choi, H. R. ``Test and Evaluation Standard for Compliance Control Performance to Ensure the Contact Safety and Performance of Field-Deployable Robotic Systems.'' Society for Standards, Certification and Safety, 2026. Oral presentation; Excellent Paper Award.}
+  \pub{\textbf{Shim, J.} and Lee, S. K. ``Investigation of Optimum Machining Conditions Considering Compliance of Lapping Wheel.'' Korean Society for Precision Engineering Combined Conference, 2020. Oral presentation; Best Paper Award.}
+  \pub{\textbf{Shim, J.} and Lee, S. K. ``Automatic Lapping System Tool Path Generation Using Direct Scanning and Bi-Cubic Spline.'' Korean Society for Precision Engineering Autumn Conference, Changwon, 2019. Poster.}
+  \pub{\textbf{Shim, J.}, Park, S. K., Koh, D. G., and Lee, S. K. ``Analysis of a 5-Axis Manipulator for the Finishing Application Considering Robot Dynamic Model.'' Korean Society for Precision Engineering Spring Conference, Jeju, 2019. Poster.}
+  \pub{\textbf{Shim, J.}, Hong, S., Seo, M. S., Kwak, J., and Lee, W. ``Robot Machine Tool Based Post-Processing for 3D Printing.'' Korean Society of Manufacturing Technology Engineers Spring Conference, Daejeon, 2018. Poster; Excellent Paper Award.}
+  \pub{\textbf{Shim, J.}, Kim, N., Kim, C. J., Ro, S.-K., and Lee, W. ``Control Technique for Tilting Head of Mobile Machine Tool.'' Korean Society of Manufacturing Technology Engineers Spring Conference Special Section, Daejeon, 2018. Oral presentation.}
+  \pub{\textbf{Shim, J.}, Kim, N., Hong, S., Seo, M. S., Kwak, J., and Lee, W. ``5-DOF Robotic Machining System for Complex Shape Machining.'' Korean Society for Precision Engineering Autumn Conference, Gwangju, 2017. Poster.}
+  \pub{Song, J., \textbf{Shim, J.}, Kim, N., Chae, G. B., and Lee, W. ``Friction Characteristic of Feed Drive System Operated in Vacuum.'' Korean Society for Precision Engineering Spring Conference, Jeju, 2017. Poster.}
+\end{enumerate}
+
+\section{Awards and Honors}
+\begin{tabularx}{\textwidth}{@{}r X@{}}
+2026 & Excellent Paper Award, Society for Standards, Certification and Safety\\
+2020 & Best Paper Award, Korean Society for Precision Engineering\\
+2018 & Excellent Paper Award, Korean Society of Manufacturing Technology Engineers\\
+2018 & Excellent Award, Industry-Linked X-Corps Contest\\
+2018 & Excellent Prize, CNU Engineering Fair Creative Engineering Capstone Design and Graduation Competition
+\end{tabularx}
+
+\section{Selected Technology Demonstrations}
+\begin{itemize}
+  \item \textbf{Robot World 2024:} Integrated vision, remote tracking, and force control for automated polishing of complex surfaces using AIDIN Robotics technology.
+  \item \textbf{Smart Factory + Automation World 2024:} Physical-HRI hand-guiding and force-controlled automated polishing of complex surfaces.
+  \item \textbf{Robot World 2023:} Physical-HRI hand-guiding and force-controlled automated polishing of flat surfaces.
+  \item \textbf{Robot World 2022:} Stability-enhanced admittance-control hand-guiding using dual six-axis force/torque sensors and an Indy7 collaborative robot.
+  \item \textbf{Robot World 2021:} Admittance-control hand-guiding and collision detection using an ultra-thin joint torque sensor.
+\end{itemize}
+
+\section{Technical Skills}
+\begin{tabularx}{\textwidth}{@{}>{\bfseries}l X@{}}
+Programming & C++, Python, MATLAB; ROS/ROS 2\\
+Simulation & Simulink, Gazebo, NVIDIA Isaac Sim\\
+Control & Reinforcement-learning-based force control; admittance/impedance control; passivity-based control; fuzzy control; model predictive control\\
+Learning & Reinforcement learning; force-aware imitation learning; artificial neural networks for force/torque sensor calibration\\
+Signal Processing & Fast Fourier transform; frequency-selective filtering; Kalman filtering\\
+Systems & Linux; PREEMPT\_RT; Xenomai; real-time robotic control\\
+Hardware & UR10/UR10e and Indy7 manipulators; six-axis force/torque sensors; torque sensors; IMUs
+\end{tabularx}
+
+\section{Professional Affiliation}
+Student Member, IEEE Robotics and Automation Society.
+
+\vfill
+{\footnotesize\color{muted}Last updated: July 2026.}
+
+\end{document}
